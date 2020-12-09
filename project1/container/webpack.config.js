@@ -11,8 +11,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        products: 'products@http://localhost:8081/remoteEntry.js',
-        cart: 'cart@http://localhost:8082/remoteEntry.js',
+        products: 'products@http://mf-poc-products.surge.sh/remoteEntry.js',
+        cart: 'cart@http://mf-poc-cart.surge.sh/remoteEntry.js',
       }
     }),
     new HtmlWebpackPlugin({
